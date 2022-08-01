@@ -1,0 +1,56 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 100; }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(+20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.content {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sound {
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+}
+
+.float {
+    animation: fadeIn 60s, float 6s ease-in-out infinite;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 10px;
+    font-family: 'Press Start 2P', cursive;
+    animation: fadeIn 30s;
+}
+
+h2 {
+    text-align: center;
+    color: grey;
+    font-family: 'IBM Plex Mono', monospace;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation-play-state: paused;
+}
+
+h2:hover {
+    animation-play-state: running;
+}
