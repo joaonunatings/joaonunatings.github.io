@@ -1,3 +1,12 @@
+/*:root {*/
+/*    font-size: 16px;*/
+/*    font-family: 'Roboto', sans-serif;*/
+/*}*/
+
+/*body {*/
+/*    color: black;*/
+/*}*/
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 100; }
@@ -31,6 +40,13 @@
     opacity: 0%;
 }
 
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
 .float {
     animation: fadeIn 60s, float 6s ease-in-out infinite;
 }
@@ -47,10 +63,140 @@ h2 {
     text-align: center;
     color: grey;
     font-family: 'IBM Plex Mono', monospace;
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    animation-play-state: paused;
 }
 
-h2:hover {
-    animation-play-state: running;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 50%;
+    z-index: 1;
 }
+
+.navSelector {
+    position: fixed;
+    background-color: white;
+    transition: width 600ms ease;
+    overflow: scroll;
+}
+
+.navSelector:hover .logo svg {
+    transform: rotate(-180deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;
+    }
+
+    .navbar:hover {
+        width: 16rem;
+    }
+
+    .navbar:hover .link-text {
+        display: inline;
+    }
+
+    .navbar:hover .logo svg
+    {
+        margin-left: 11rem;
+    }
+
+    .navbar:hover .logo-text
+    {
+        left: 0px;
+    }
+}
+
+
+.navMenu
+{
+    position:fixed;
+    left:0px;
+    bottom: 0px;
+
+    width:100vw;
+    padding:20px;
+    text-align:center;
+    /*border:none;*/
+
+    background: none;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+
+    font-size:20px;
+    color:white;
+
+    /* transition */
+
+    transition:bottom 1s;
+    -webkit-transition:bottom 1s;
+    -moz-transition:bottom 1s;
+    -o-transition:bottom 1s;
+}
+
+.navMenu:hover
+{
+    bottom:50px;
+}
+
+
+/* SPAN OF SPAN */
+
+.navMenu span
+{
+    margin:20px;
+}
+
+.navMenu span a:hover
+{
+    color:rgba(255,255,255,0.5);
+}
+
+/*#navButton {*/
+/*    background: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    margin: auto;*/
+/*    padding: 0;*/
+/*    font-size: 8vw;*/
+/*    color: white;*/
+/*    opacity:0.5;*/
+/*    -webkit-transition: opacity 2s ease-out;*/
+/*    -moz-transition: opacity 2s ease-out;*/
+/*    -o-transition: opacity 2s ease-out;*/
+/*    transition: opacity 2s ease-out;*/
+/*}*/
+
+/*#navButton:hover {*/
+/*    opacity:1*/
+/*}*/
