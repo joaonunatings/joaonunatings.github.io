@@ -1,178 +1,135 @@
 {
   "main": {
-    "id": "a79eb1edbc418f91",
+    "id": "9ba58beeff9ea4da",
     "type": "split",
     "children": [
       {
-        "id": "88e61f3d24a664f9",
+        "id": "09525e07af9e5379",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "kanban",
+          "state": {
+            "file": "kanban.md"
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "da8b02a8cb4d31ed",
-    "type": "split",
+    "id": "c2d1c180caf9253b",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "d61420b2112137a0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e216377da4da3b3a",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "41fbe07e2d32ff30",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "tag:#progress",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "d12d5a20b641d28c",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
+        "id": "284ca50e46d113c4",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "5ede267cbdc6a6f1",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
+      },
+      {
+        "id": "eab49ff9ed74c891",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "ba8a20310bd12233",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 296.5
+    "currentTab": 0
   },
   "right": {
-    "id": "259b772df5fe413a",
-    "type": "split",
+    "id": "450187237885beb5",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "2aa275764c26387f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9afd5d0ed6a5102a",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "kanban.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "e9d38af06cd06f9a",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "kanban.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "9f5276f824a3a701",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "9f15918583e75f14",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "kanban.md"
-              }
-            }
-          },
-          {
-            "id": "f6434af1a6bb4835",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {}
-            }
+        "id": "c66ce6cca5b3260f",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "kanban.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ],
-        "currentTab": 4
+        }
+      },
+      {
+        "id": "0079929d3a16f344",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "kanban.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "52582bb2a04195d2",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "kanban.md"
+          }
+        }
+      },
+      {
+        "id": "192dc032f2cb7179",
+        "type": "leaf",
+        "state": {
+          "type": "git-view",
+          "state": {}
+        }
+      },
+      {
+        "id": "6c9093a66a07a082",
+        "type": "leaf",
+        "state": {
+          "type": "todo",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
-  "floating": {
-    "id": "311b0497549342ea",
-    "type": "floating",
-    "children": [
-      {
-        "id": "42fa0bf6a5c9a6bc",
-        "type": "window",
-        "children": [
-          {
-            "id": "0bb328c8e72cd16e",
-            "type": "leaf",
-            "state": {
-              "type": "kanban",
-              "state": {
-                "file": "kanban.md"
-              }
-            }
-          }
-        ],
-        "direction": "vertical",
-        "x": 289,
-        "y": 136,
-        "width": 1362,
-        "height": 968,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "88e61f3d24a664f9",
+  "active": "6c9093a66a07a082",
   "lastOpenFiles": [
-    "issues/1663700293196 - Website layout.md",
-    "kanban.md",
-    "issues/1663190394832 - Travel button.md",
-    "issues/1663190000672 - Travel animation.md",
-    "issues/1663190758298 - About Me page.md",
-    "issues/1663190922101 - Fragments.md",
-    "README.md",
-    "issues/template.md",
-    "202209142147.md",
-    "issues/202209142148.md"
+    "2022-09-21.md",
+    "kanban.md"
   ]
 }

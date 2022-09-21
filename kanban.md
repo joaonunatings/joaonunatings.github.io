@@ -7,6 +7,7 @@ kanban-plugin: basic
 ## Future additions
 
 - [ ] Make mobile version (or mobile friendly)
+- [ ] Testing obsidian got sync
 
 
 ## Todo
