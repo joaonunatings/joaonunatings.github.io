@@ -7,9 +7,10 @@
         "id": "09525e07af9e5379",
         "type": "leaf",
         "state": {
-          "type": "kanban",
+          "type": "diff-view",
           "state": {
-            "file": "kanban.md"
+            "staged": false,
+            "file": "issues/1663700293196 - Website layout.md"
           }
         }
       }
@@ -17,119 +18,123 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "c2d1c180caf9253b",
-    "type": "mobile-drawer",
+    "id": "79f228c81e4a27fa",
+    "type": "split",
     "children": [
       {
-        "id": "284ca50e46d113c4",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "5ede267cbdc6a6f1",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "2eb07afacbd3f347",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "495e74c0b3544d4b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "80ae6276220e2768",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2ad3f0107936fbed",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "eab49ff9ed74c891",
-        "type": "leaf",
-        "state": {
-          "type": "tag",
-          "state": {
-            "sortOrder": "frequency",
-            "useHierarchy": true
-          }
-        }
-      },
-      {
-        "id": "ba8a20310bd12233",
-        "type": "leaf",
-        "state": {
-          "type": "starred",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "450187237885beb5",
-    "type": "mobile-drawer",
+    "id": "89fbe107384e8f68",
+    "type": "split",
     "children": [
       {
-        "id": "c66ce6cca5b3260f",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "kanban.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+        "id": "0da2920e8989c3a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "173baa56a442b61c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6f91a12d3c765ffc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f831cd7e9cb2a6b9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "381b058a3b56149e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "94679f703a6042a9",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "0079929d3a16f344",
-        "type": "leaf",
-        "state": {
-          "type": "outgoing-link",
-          "state": {
-            "file": "kanban.md",
-            "linksCollapsed": false,
-            "unlinkedCollapsed": true
-          }
-        }
-      },
-      {
-        "id": "52582bb2a04195d2",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "kanban.md"
-          }
-        }
-      },
-      {
-        "id": "192dc032f2cb7179",
-        "type": "leaf",
-        "state": {
-          "type": "git-view",
-          "state": {}
-        }
-      },
-      {
-        "id": "6c9093a66a07a082",
-        "type": "leaf",
-        "state": {
-          "type": "todo",
-          "state": {}
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
-  "active": "6c9093a66a07a082",
+  "active": "09525e07af9e5379",
   "lastOpenFiles": [
-    "2022-09-21.md",
-    "kanban.md"
+    "issues/1663700293196 - Website layout.md",
+    "kanban.md",
+    "2022-09-21.md"
   ]
 }

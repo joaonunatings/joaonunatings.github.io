@@ -12,6 +12,7 @@ kanban-plugin: basic
 
 ## Todo
 
+- [ ] Figma tutorial ([[1663700293196 - Website layout|issue]])
 - [ ] About me page ([[202209142148|issue]])
 - [ ] Add travel animation when changing from one page to another ([[1663190000672 - Travel animation|issue]])
 - [ ] Scale down when travel button is clicked ([[1663190394832 - Travel button|issue]])
