@@ -17,6 +17,13 @@ Array.prototype.moveAll = function(direction) {
 	}
 }
 
+function mouseClicked() {
+	let star = random(stars)
+	let position = createVector(mouseX, mouseY, 0)
+	star.set(position)
+	star.draw()
+}
+
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight);
 }
@@ -44,14 +51,12 @@ function setup() {
 	initStars()
 }
 
-
-
 let rotateIncrement = 0
 
 function update() {
 	let speedX = currentSpeed * norm(mouseX, width / 2, width)
 	let speedY = currentSpeed * norm(mouseY, height / 2, height)
-	let direction = createVector(speedX, speedY, 0)
+	let direction = createVector(-speedX, -speedY, 0)
 	stars.moveAll(direction)
 }
 

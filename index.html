@@ -4,35 +4,64 @@
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/addons/p5.sound.min.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="libs/transition.min.js"></script>
 	<script src="sketch/index.js"></script>
 	<script src="sketch/star.js"></script>
-	<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="styles/general.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="styles/navigation.css" media="screen" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=IBM+Plex+Mono:ital,wght@1,100&family=Press+Start+2P&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
-<!--<div class="travel-nav">-->
-<!--	<a href="/" class="arrow right">-->
-<!--		<span class="arrow-top"></span>-->
-<!--		<span class="arrow-bottom"></span>-->
-<!--		<b class="travel-text">Travel to Projects</b>-->
-<!--	</a>-->
-<!--</div>-->
-<main>
-	<div class="content">
-		        <h1>João Nunes</h1>
-		        <div id="description">
-		          <h2>Computer Science Engineer</h2>
-		        </div>
+<nav id="leftNav" class="left">
+	<div class="travel-container" onclick="goToProjects()">
+		<svg class="arrow left" width="67" height="120" viewBox="0 0 67 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path class="line1" d="M2.23223 122.232L0.464466 124L4 127.536L5.76777 125.768L2.23223 122.232ZM65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322C64.7915 61.2559 63.2085 61.2559 62.2322 62.2322L65.7678 65.7678ZM5.76777 125.768L65.7678 65.7678L62.2322 62.2322L2.23223 122.232L5.76777 125.768Z" fill="#B1B1B1"/>
+			<path class="line2" d="M5.76777 2.23223L4 0.464466L0.464466 4L2.23223 5.76777L5.76777 2.23223ZM62.2322 65.7678C63.2085 66.7441 64.7915 66.7441 65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322L62.2322 65.7678ZM2.23223 5.76777L62.2322 65.7678L65.7678 62.2322L5.76777 2.23223L2.23223 5.76777Z" fill="#B1B1B1"/>
+		</svg>
+		<div class="travel-text">Projects</div>
 	</div>
-	<button id="mute" class="mute-button"><i class="bi bi-volume-up"></i></button>
-	<div style="opacity: 0; z-index: -100" id="player"></div>
+</nav>
+<nav id="rightNav" class="right">
+	<div class="travel-container" onclick="goToAbout()">
+		<div class="travel-text">About</div>
+		<svg class="arrow right" width="67" height="120" viewBox="0 0 67 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path class="line1" d="M2.23223 122.232L0.464466 124L4 127.536L5.76777 125.768L2.23223 122.232ZM65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322C64.7915 61.2559 63.2085 61.2559 62.2322 62.2322L65.7678 65.7678ZM5.76777 125.768L65.7678 65.7678L62.2322 62.2322L2.23223 122.232L5.76777 125.768Z" fill="#B1B1B1"/>
+			<path class="line2" d="M5.76777 2.23223L4 0.464466L0.464466 4L2.23223 5.76777L5.76777 2.23223ZM62.2322 65.7678C63.2085 66.7441 64.7915 66.7441 65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322L62.2322 65.7678ZM2.23223 5.76777L62.2322 65.7678L65.7678 62.2322L5.76777 2.23223L2.23223 5.76777Z" fill="#B1B1B1"/>
+		</svg>
+	</div>
+</nav>
+<nav id="botNav" class="bottom">
+	<div class="travel-container" onclick="goToCV()">
+		<div class="travel-text">CV</div>
+		<svg class="arrow up" width="67" height="120" viewBox="0 0 67 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path class="line1" d="M2.23223 122.232L0.464466 124L4 127.536L5.76777 125.768L2.23223 122.232ZM65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322C64.7915 61.2559 63.2085 61.2559 62.2322 62.2322L65.7678 65.7678ZM5.76777 125.768L65.7678 65.7678L62.2322 62.2322L2.23223 122.232L5.76777 125.768Z" fill="#B1B1B1"/>
+			<path class="line2" d="M5.76777 2.23223L4 0.464466L0.464466 4L2.23223 5.76777L5.76777 2.23223ZM62.2322 65.7678C63.2085 66.7441 64.7915 66.7441 65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322L62.2322 65.7678ZM2.23223 5.76777L62.2322 65.7678L65.7678 62.2322L5.76777 2.23223L2.23223 5.76777Z" fill="#B1B1B1"/>
+		</svg>
+	</div>
+</nav>
+<nav id="topNav" class="top" hidden>
+	<div class="travel-container">
+		<div class="travel-text">Home</div>
+		<svg class="arrow down" width="67" height="120" viewBox="0 0 67 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path class="line1" d="M2.23223 122.232L0.464466 124L4 127.536L5.76777 125.768L2.23223 122.232ZM65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322C64.7915 61.2559 63.2085 61.2559 62.2322 62.2322L65.7678 65.7678ZM5.76777 125.768L65.7678 65.7678L62.2322 62.2322L2.23223 122.232L5.76777 125.768Z" fill="#B1B1B1"/>
+			<path class="line2" d="M5.76777 2.23223L4 0.464466L0.464466 4L2.23223 5.76777L5.76777 2.23223ZM62.2322 65.7678C63.2085 66.7441 64.7915 66.7441 65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322L62.2322 65.7678ZM2.23223 5.76777L62.2322 65.7678L65.7678 62.2322L5.76777 2.23223L2.23223 5.76777Z" fill="#B1B1B1"/>
+		</svg>
+	</div>
+</nav>
+<main>
+	<div id="content">
+		<iframe src="pages/home.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove();"></iframe>
+	</div>
 </main>
-
-	<script src="script.js"></script>
+<audio id="audio-player" src="https://github.com/joaonunatingscode/joaonunatingscode.github.io/raw/main/audio/Reflection.mp3" autoplay="autoplay" loop="loop"></audio>
+<script src="script.js"></script>
+<script src="navigation.js"></script>
 </body>
 </html>

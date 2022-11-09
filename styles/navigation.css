@@ -1,0 +1,186 @@
+/*region arrow styles*/
+.arrow {
+    position: absolute;
+}
+
+.arrow.left {
+    transform: rotate(180deg);
+}
+
+.arrow.right {
+    transform: rotate(0);
+}
+
+.arrow.up {
+    transform: rotate(90deg);
+}
+
+.arrow.down {
+    transform: rotate(-90deg);
+}
+
+nav.left .arrow {
+    left: 10%;
+    transition: left 1s ease;
+}
+
+nav.right .arrow {
+    right: 10%;
+    transition: right 1s ease;
+}
+
+nav.left:hover .arrow {
+    left: 50%;
+}
+
+nav.right:hover .arrow {
+    right: 50%;
+}
+
+nav.bottom .arrow {
+    bottom: 0;
+    transition: bottom 1s ease;
+}
+
+nav.bottom:hover .arrow {
+    bottom: -30%;
+}
+
+nav.top .arrow {
+    top: 0;
+    transition: top 1s ease;
+}
+
+nav.top:hover .arrow {
+    top: 30%;
+}
+
+.line1, .line2 {
+    transform-origin: 100% 50%;
+    --angle: 0deg;
+    --translate: 0;
+    transition: transform 0.5s ease, filter 2s;
+    filter: blur(3px);
+}
+
+.line1 {
+    transform: rotate(calc(var(--angle) * -1)) translateY(calc(var(--translate) * -1));
+}
+
+.line2 {
+    transform: rotate(var(--angle)) translateY(var(--translate));
+}
+
+nav:hover .line1, nav:hover .line2 {
+    --angle: 45deg;
+    --translate: 50%;
+    filter: blur(1px);
+}
+/*endregion arrow styles*/
+
+/*region nav styles*/
+nav {
+    position: absolute;
+    display: flex;
+}
+
+nav.left, nav.right {
+    top: 0;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+}
+
+nav.left {
+    left: 0;
+}
+
+nav.right {
+    right: 0;
+}
+
+nav.top, nav.bottom {
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+}
+
+nav.top {
+    top: 0;
+}
+
+nav.bottom {
+    bottom: 0;
+}
+/*endregion nav styles*/
+
+/*region travel container and text*/
+.travel-container {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.travel-text {
+    font-family: 'Chakra Petch', sans-serif;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s;
+    filter: blur(5px);
+    width: 100px;
+}
+
+nav:hover .travel-text {
+    opacity: 1;
+    filter: blur(2px);
+    transition: all 2s;
+}
+
+.travel-container:hover .travel-text {
+    filter: blur(1px);
+}
+
+.left .travel-text {
+    left: -30%;
+}
+
+.right .travel-text {
+    right: -30%;
+}
+
+.bottom .travel-text {
+    bottom: 80%;
+}
+
+.top .travel-text {
+    top: 0;
+}
+
+nav.bottom:hover .travel-text {
+    bottom: 50%;
+}
+
+nav.top:hover .travel-text {
+    top: 40%;
+}
+
+nav.left:hover .travel-text {
+    left: 10%;
+}
+
+nav.right:hover .travel-text {
+    right: 10%;
+}
+/*endregion travel container and text*/

@@ -55,4 +55,8 @@ class Star {
 		let scale = this.size + cos(this.t) * 0.2
 		ellipse(this.pos.x, this.pos.y, scale, scale)
 	}
+
+	set(position) {
+		this.pos = position
+	}
 }
