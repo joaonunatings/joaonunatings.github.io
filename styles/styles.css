@@ -54,6 +54,12 @@
     height: 100%;
 }
 
+#press-start-text {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    animation: fadeIn 3s linear, float 6s infinite;
+}
+
 /*region home-text*/
 #home-text {
     vertical-align: middle;

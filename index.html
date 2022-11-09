@@ -19,7 +19,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav id="leftNav" class="left">
+<nav id="leftNav" class="left" hidden>
 	<div class="travel-container" onclick="goToProjects()">
 		<svg class="arrow left" width="67" height="120" viewBox="0 0 67 128" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path class="line1" d="M2.23223 122.232L0.464466 124L4 127.536L5.76777 125.768L2.23223 122.232ZM65.7678 65.7678C66.7441 64.7915 66.7441 63.2085 65.7678 62.2322C64.7915 61.2559 63.2085 61.2559 62.2322 62.2322L65.7678 65.7678ZM5.76777 125.768L65.7678 65.7678L62.2322 62.2322L2.23223 122.232L5.76777 125.768Z" fill="#B1B1B1"/>
@@ -28,7 +28,7 @@
 		<div class="travel-text">Projects</div>
 	</div>
 </nav>
-<nav id="rightNav" class="right">
+<nav id="rightNav" class="right" hidden>
 	<div class="travel-container" onclick="goToAbout()">
 		<div class="travel-text">About</div>
 		<svg class="arrow right" width="67" height="120" viewBox="0 0 67 128" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@
 		</svg>
 	</div>
 </nav>
-<nav id="botNav" class="bottom">
+<nav id="botNav" class="bottom" hidden>
 	<div class="travel-container" onclick="goToCV()">
 		<div class="travel-text">CV</div>
 		<svg class="arrow up" width="67" height="120" viewBox="0 0 67 128" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,10 +57,10 @@
 </nav>
 <main>
 	<div id="content">
-		<iframe src="pages/home.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove();"></iframe>
+		<iframe src="pages/start.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove();"></iframe>
 	</div>
 </main>
-<audio id="audio-player" src="audio/Reflection.mp3" autoplay="autoplay" loop="loop"></audio>
+<audio id="audio-player" src="audio/Reflection.mp3" loop></audio>
 <script src="script.js"></script>
 <script src="navigation.js"></script>
 </body>
