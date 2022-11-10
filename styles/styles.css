@@ -1,10 +1,12 @@
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        -moz-opacity: 0;
         pointer-events: none;
     }
     100% {
-        opacity: 100;
+        -moz-opacity: 100%;
+        opacity: 100%;
         pointer-events: all;
     }
 }
@@ -54,12 +56,7 @@
     height: 100%;
 }
 
-/*#start-container {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
+/*region start page*/
 #start-text {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: bold;
@@ -82,6 +79,7 @@
     color: white;
     animation: fadeIn 3s linear, float 6s infinite;
 }
+/*endregion start page*/
 
 /*region home-text*/
 #home-text {

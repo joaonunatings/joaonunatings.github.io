@@ -56,9 +56,14 @@ nav.top:hover .arrow {
 }
 
 .line1, .line2 {
+    -webkit-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
     --angle: 0deg;
     --translate: 0;
+    -moz-transition: transform 0.5s ease, filter 2s;
+    -ms-transition: transform 0.5s ease, filter 2s;
+    -o-transition: transform 0.5s ease, filter 2s;
+    -webkit-transition: transform 0.5s ease, filter 2s;
     transition: transform 0.5s ease, filter 2s;
     -ms-filter: blur(3px);
     -webkit-filter: blur(3px);

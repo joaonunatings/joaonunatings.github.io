@@ -4,28 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "471ee5e0dd3d81e2",
-        "type": "leaf",
-        "dimension": 32.18170185540627,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "issues/1663190758298 - About Me page.md",
-            "mode": "source",
-            "source": false
+        "id": "919209afffb6e67a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a833f166abcdb4e",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "kanban.md"
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "1498478628c935fb",
-        "type": "leaf",
-        "dimension": 67.81829814459373,
-        "state": {
-          "type": "kanban",
-          "state": {
-            "file": "kanban.md"
-          }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -43,7 +35,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -73,7 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 283.5
+    "width": 470.5
   },
   "right": {
     "id": "89fbe107384e8f68",
@@ -89,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "issues/1663190758298 - About Me page.md",
+                "file": "kanban.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "issues/1663190758298 - About Me page.md",
+                "file": "kanban.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,44 +123,37 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "issues/1663190758298 - About Me page.md"
+                "file": "kanban.md"
               }
             }
           },
           {
-            "id": "94679f703a6042a9",
+            "id": "d0f2c8f5184feff8",
             "type": "leaf",
             "state": {
               "type": "todo",
               "state": {}
             }
-          },
-          {
-            "id": "4ab6a5a98dae5244",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {}
-            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "471ee5e0dd3d81e2",
+  "active": "8a833f166abcdb4e",
   "lastOpenFiles": [
+    "issues/1668101260140 - Bugs.md",
+    "issues/1668101792021 - Code cleanup.md",
     "kanban.md",
-    "issues/1663190758298 - About Me page.md",
-    "issues/1664813622449 - Home page.md",
-    "issues/1663190000672 - Travel animation.md",
-    "202209142148.md",
-    "issues/1664813857181 - Projects page.md",
     "issues/1664913035221 - Starfield class.md",
-    "issues/1663700293196 - Website layout.md",
+    "issues/1667853468740 - Routing.md",
     "issues/1664829072135 - Background music.md",
-    "issues/1664813432648 - Navbar when travel animation disabled.md"
+    "issues/1663190758298 - About Me page.md",
+    "issues/1663190000672 - Travel animation.md",
+    "issues/1664813905523 - Curriculum vitæ page.md",
+    "issues/closed/1663190394832 - Travel button.md"
   ]
 }
