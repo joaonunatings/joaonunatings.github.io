@@ -60,6 +60,8 @@ nav.top:hover .arrow {
     --angle: 0deg;
     --translate: 0;
     transition: transform 0.5s ease, filter 2s;
+    -ms-filter: blur(3px);
+    -webkit-filter: blur(3px);
     filter: blur(3px);
 }
 
@@ -74,6 +76,8 @@ nav.top:hover .arrow {
 nav:hover .line1, nav:hover .line2 {
     --angle: 45deg;
     --translate: 50%;
+    -ms-filter: blur(1px);
+    -webkit-filter: blur(1px);
     filter: blur(1px);
 }
 /*endregion arrow styles*/

@@ -54,6 +54,29 @@
     height: 100%;
 }
 
+/*#start-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+#start-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 8px;
+    color: white;
+    animation: fadeIn 3s linear;
+}
+
+#click-text {
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    animation: fadeIn 30s linear;
+}
+
 #press-start-text {
     font-family: 'Press Start 2P', cursive;
     color: white;
@@ -163,11 +186,9 @@
 }
 
 #about-text p {
-    position: relative;
     font-family: 'Press Start 2P', cursive;
-    height: 100%;
-    font-size: 12px;
     text-align: start;
+    font-size: 12px;
     display: block;
     line-height: 20px;
     margin: 0;
