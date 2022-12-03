@@ -10,5 +10,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="@types/p5" level="application" />
     <orderEntry type="library" name="@types/bootstrap" level="application" />
+    <orderEntry type="library" name="p5" level="application" />
+    <orderEntry type="library" name="bootstrap-icons" level="application" />
   </component>
 </module>

@@ -20,6 +20,7 @@ function terminalType() {
 const audioPlayer = document.getElementById('audio-player')
 let audioPlaying = false
 async function setupAudioPlayer(event) {
+	document.body.removeEventListener('click', setupAudioPlayer)
 	event.stopPropagation()
 	if (audioPlaying || !audioPlayer.paused) return
 	document.body.style.pointerEvents = 'none'

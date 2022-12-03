@@ -1,73 +1,194 @@
-/*region arrow styles*/
+/*region nav*/
+nav {
+    display: flex;
+    position: absolute;
+
+    visibility: hidden;
+
+    z-index: 1;
+}
+
+#left-nav, #right-nav {
+    width: 200px;
+
+    flex-direction: row;
+    align-items: center;
+
+    top: 0;
+    bottom: 0;
+}
+
+#left-nav {
+    left: 0;
+}
+
+#right-nav {
+    right: 0;
+}
+
+#top-nav, #bot-nav {
+    height: 120px;
+
+    flex-direction: column;
+    align-items: center;
+
+    left: 0;
+    right: 0;
+}
+
+#top-nav {
+    top: 0;
+}
+
+#bot-nav {
+    bottom: 0;
+}
+/*endregion*/
+
+/*region travel-container & travel-text*/
+.travel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    width: 200px;
+    height: 200px;
+
+    cursor: pointer;
+}
+
+.travel-text {
+    position: absolute;
+    vertical-align: middle;
+
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    text-align: center;
+
+    color: var(--primary-text-color);
+    opacity: 0;
+    width: 100px;
+
+    filter: blur(5px);
+    transition: all 0.5s;
+}
+
+nav:hover .travel-text {
+    opacity: 1;
+    filter: blur(2px);
+    transition: all 2s;
+}
+
+.travel-container:hover .travel-text {
+    filter: blur(1px);
+}
+
+#left-nav .travel-text {
+    left: -30%;
+}
+
+#left-nav:hover .travel-text {
+    left: 10%;
+}
+
+#right-nav .travel-text {
+    right: -30%;
+}
+
+#right-nav:hover .travel-text {
+    right: 10%;
+}
+
+#bot-nav .travel-text {
+    bottom: 80%;
+}
+
+#bot-nav:hover .travel-text {
+    bottom: 50%;
+}
+
+#top-nav .travel-text {
+    top: 0;
+}
+
+#top-nav:hover .travel-text {
+    top: 40%;
+}
+/*endregion*/
+
+/*region arrow*/
 .arrow {
     position: absolute;
+
+    --rotate: 0;
+    transform: rotate(var(--rotate));
 }
 
-.arrow.left {
-    transform: rotate(180deg);
-}
-
-.arrow.right {
-    transform: rotate(0);
-}
-
-.arrow.up {
-    transform: rotate(90deg);
-}
-
-.arrow.down {
-    transform: rotate(-90deg);
-}
-
-nav.left .arrow {
-    left: 10%;
-    transition: left 1s ease;
-}
-
-nav.right .arrow {
+#right-nav .arrow {
+    --rotate: 0;
     right: 10%;
+
     transition: right 1s ease;
 }
 
-nav.left:hover .arrow {
-    left: 50%;
-}
-
-nav.right:hover .arrow {
+#right-nav:hover .arrow {
     right: 50%;
 }
 
-nav.bottom .arrow {
-    bottom: 0;
-    transition: bottom 1s ease;
+#left-nav .arrow {
+    --rotate: 180deg;
+    left: 10%;
+
+    transition: left 1s ease;
 }
 
-nav.bottom:hover .arrow {
-    bottom: -30%;
+#left-nav:hover .arrow {
+    left: 50%;
 }
 
-nav.top .arrow {
+#top-nav .arrow {
+    --rotate: -90deg;
     top: 0;
+
     transition: top 1s ease;
 }
 
-nav.top:hover .arrow {
+#top-nav:hover .arrow {
     top: 30%;
 }
 
+#bot-nav .arrow {
+    --rotate: 90deg;
+    bottom: 0;
+
+    transition: bottom 1s ease;
+}
+
+#bot-nav:hover .arrow {
+    bottom: -30%;
+}
+
 .line1, .line2 {
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    --angle: 0deg;
+    --angle: 0;
     --translate: 0;
-    -moz-transition: transform 0.5s ease, filter 2s;
-    -ms-transition: transform 0.5s ease, filter 2s;
-    -o-transition: transform 0.5s ease, filter 2s;
-    -webkit-transition: transform 0.5s ease, filter 2s;
-    transition: transform 0.5s ease, filter 2s;
-    -ms-filter: blur(3px);
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
+
+    --origin: 100% 50%;
+    -webkit-transform-origin: var(--origin);
+    transform-origin: var(--origin);
+
+    --filter: blur(3px);
+    -ms-filter: var(--filter);
+    -webkit-filter: var(--filter);
+    filter: var(--filter);
+
+    --transition: transform 0.5s ease, filter 2s;
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
 }
 
 .line1 {
@@ -81,115 +202,6 @@ nav.top:hover .arrow {
 nav:hover .line1, nav:hover .line2 {
     --angle: 45deg;
     --translate: 50%;
-    -ms-filter: blur(1px);
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
+    --filter: 1px;
 }
-/*endregion arrow styles*/
-
-/*region nav styles*/
-nav {
-    position: absolute;
-    display: flex;
-}
-
-nav.left, nav.right {
-    top: 0;
-    bottom: 0;
-    flex-direction: row;
-    align-items: center;
-    width: 200px;
-}
-
-nav.left {
-    left: 0;
-}
-
-nav.right {
-    right: 0;
-}
-
-nav.top, nav.bottom {
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    height: 120px;
-}
-
-nav.top {
-    top: 0;
-}
-
-nav.bottom {
-    bottom: 0;
-}
-/*endregion nav styles*/
-
-/*region travel container and text*/
-.travel-container {
-    cursor: pointer;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.travel-text {
-    font-family: 'Chakra Petch', sans-serif;
-    position: absolute;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-    color: white;
-    opacity: 0;
-    transition: all 0.5s;
-    filter: blur(5px);
-    width: 100px;
-}
-
-nav:hover .travel-text {
-    opacity: 1;
-    filter: blur(2px);
-    transition: all 2s;
-}
-
-.travel-container:hover .travel-text {
-    filter: blur(1px);
-}
-
-.left .travel-text {
-    left: -30%;
-}
-
-.right .travel-text {
-    right: -30%;
-}
-
-.bottom .travel-text {
-    bottom: 80%;
-}
-
-.top .travel-text {
-    top: 0;
-}
-
-nav.bottom:hover .travel-text {
-    bottom: 50%;
-}
-
-nav.top:hover .travel-text {
-    top: 40%;
-}
-
-nav.left:hover .travel-text {
-    left: 10%;
-}
-
-nav.right:hover .travel-text {
-    right: 10%;
-}
-/*endregion travel container and text*/
+/*endregion*/

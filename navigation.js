@@ -26,10 +26,10 @@ const OPACITY_ANIMATION = {
 }
 
 const CONTENT = document.getElementById('content')
-const RIGHT_NAV = document.getElementById('rightNav')
-const LEFT_NAV = document.getElementById('leftNav')
-const TOP_NAV = document.getElementById('topNav')
-const BOT_NAV = document.getElementById('botNav')
+const RIGHT_NAV = document.getElementById('right-nav')
+const LEFT_NAV = document.getElementById('left-nav')
+const TOP_NAV = document.getElementById('top-nav')
+const BOT_NAV = document.getElementById('bot-nav')
 
 function animate(directionAnimation, opacityAnimation) {
 	return transition.begin(CONTENT, [
@@ -51,13 +51,11 @@ async function travel(direction, pageContent) {
 function hideNavs(navs) {
 	let navPromises = []
 	for (const nav of navs) {
-		if (nav.hidden === false) {
-			nav.style.pointerEvents = 'none'
-			navPromises.push(transition.begin(nav, "opacity 1 0 0.5s ease-in").promise.then(() => {
-				nav.hidden = true
-				nav.style.pointerEvents = 'auto'
-			}))
-		}
+		nav.style.pointerEvents = 'none'
+		navPromises.push(transition.begin(nav, "opacity 1 0 0.5s ease-in").promise.then(() => {
+			nav.style.visibility = 'hidden';
+			nav.style.pointerEvents = 'auto'
+		}))
 	}
 	return Promise.all(navPromises)
 }
@@ -65,10 +63,8 @@ function hideNavs(navs) {
 function showNavs(navs) {
 	let navPromises = []
 	for (const nav of navs) {
-		if (nav.hidden === true) {
-			nav.hidden = false
-			navPromises.push(transition.begin(nav, 'opacity 0 1 1s ease-out').promise)
-		}
+		nav.style.visibility = 'visible';
+		navPromises.push(transition.begin(nav, 'opacity 0 1 1s ease-out').promise)
 	}
 	return Promise.all(navPromises)
 }
@@ -117,13 +113,8 @@ async function goToAbout() {
 		changeNav(LEFT_NAV, "Home", () => goToHome(DIRECTION_ANIMATION.RIGHT))
 		showNavs([LEFT_NAV])
 	})
-	const aboutText = document.getElementById('about-text')
-	const profilePicture = document.getElementById('profile-picture')
-	const aboutParagraph = document.getElementById('about-paragraph')
-	await transition.begin(aboutText, "width 0 100% 0.5s ease-out").promise
-	transition.begin(aboutParagraph, "opacity 0 1 1s linear")
-	transition.begin(profilePicture, "opacity 0 1 1s linear")
-	transition.begin(aboutText, "filter blur(5px) blur(0) 1s linear")
+	const aboutContainer = document.getElementById('about-container')
+	transition.begin(aboutContainer, "filter blur(10px) blur(0) 0.8s ease-out")
 }
 
 async function goToCV() {

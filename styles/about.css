@@ -1,0 +1,48 @@
+#about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    overflow: hidden;
+
+    filter: blur(10px);
+
+    border: 3px solid white;
+    min-width: 20%;
+    max-width: 50%;
+
+    height: auto;
+    max-height: 100%;
+
+    border-radius: 20px;
+    padding: 0;
+}
+
+#about-picture {
+    display: block;
+
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+
+    opacity: 1;
+
+    transition: scale 1s, opacity 10s;
+
+    border: 4px white solid;
+    border-radius: 100%;
+
+    margin: 0 20px;
+}
+
+.about-text {
+    display: block;
+
+    font-family: var(--primary-font-family);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: start;
+    line-height: 20px;
+
+    opacity: 1;
+}

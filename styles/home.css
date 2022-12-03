@@ -1,0 +1,63 @@
+#home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home-title, #home-description {
+    display: block;
+    margin-bottom: 0;
+}
+
+#home-title {
+    font-family: var(--primary-font-family);
+    font-size: 5rem;
+    letter-spacing: 10px;
+    text-align: center;
+
+    color: var(--primary-text-color);
+
+    --blur: 3px;
+    filter: blur(var(--blur));
+
+    transition: all 0.5s;
+
+    margin-bottom: 1rem;
+}
+
+#home-title:hover {
+    --blur: 1px;
+}
+
+#home-contact-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-icon {
+    --alpha: 0.5;
+    --color: rgba(211, 211, 211, var(--alpha));
+    color: var(--color);
+
+    font-size: 20px;
+
+    transition: color 0.5s;
+
+    margin: 0 20px;
+}
+
+.contact-icon:hover {
+    --alpha: 1;
+    color: var(--color);
+}
+
+#home-description {
+    font-family: var(--secondary-font-family);
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+
+    animation: float 6s ease-in-out infinite, fadeIn 60s;
+}

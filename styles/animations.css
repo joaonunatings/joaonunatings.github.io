@@ -1,0 +1,61 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -moz-opacity: 0;
+        pointer-events: none;
+    }
+    100% {
+        -moz-opacity: 100%;
+        opacity: 100%;
+        pointer-events: all;
+    }
+}
+
+@keyframes slightFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% { transform: translatey(0px); }
+    50% { transform: translatey(+20px); }
+    100% { transform: translatey(0px); }
+}
+
+@keyframes flyOut {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

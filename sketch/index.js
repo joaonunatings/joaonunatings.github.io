@@ -40,10 +40,6 @@ function changeState(state) {
 }
 
 function setup() {
-	// document.getElementById("navContent").addEventListener('hidden.bs.offcanvas', function () {
-	// 	currentState = 0
-	// 	initStars()
-	// })
 	canvas = createCanvas(windowWidth, windowHeight);
 	canvas.position(0,0);
 	canvas.style('z-index', '-2');

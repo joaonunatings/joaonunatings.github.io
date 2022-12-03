@@ -1,0 +1,9 @@
+#projects-text {
+    font-family: var(--text-font-family);
+    font-size: 0.8rem;
+    text-align: center;
+
+    color: var(--primary-text-color);
+
+    margin: 0;
+}
