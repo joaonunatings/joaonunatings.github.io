@@ -9,7 +9,6 @@ Music to add:
 - Romeo Poirier
 
 ## Issue 
-#progress
 - [x] Download music
 - [x] Set audio background
 - [ ] Keep track of where music left at

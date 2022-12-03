@@ -13,7 +13,6 @@ Add download link to more formal CV (i.e.: one created using *Europass* or *Canv
 - Tools: Jetbrains, Linux tools, etc
 
 ## Issue
-#progress
 - [x] Read about CV in other websites
 - [x] Write CV based on [this](https://www.constantcontact.com/blog/website-what-to-include-in-an-online-resume-website/) and [this](http://www.pascalvangemert.nl/#/abilities)
 - [x] Contact: delete complete name and resident location
@@ -23,3 +22,4 @@ Add download link to more formal CV (i.e.: one created using *Europass* or *Canv
 - [ ] Add bar representing level for each language
 - [ ] Add links to CV's pdf download
 - [ ] Accordian style like bootstrap ([here](https://getbootstrap.com/docs/5.0/components/accordion/))
+- [ ] Upload CV to a cloud host so it is updated automatically in the website instead of update the docs in 

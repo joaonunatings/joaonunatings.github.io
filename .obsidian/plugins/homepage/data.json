@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "defaultNote": "kanban",
+  "useMoment": false,
+  "momentFormat": "YYYY-MM-DD",
+  "workspace": "Startup",
+  "workspaceEnabled": true,
+  "hasRibbonIcon": true,
+  "openMode": "Replace all open notes",
+  "view": "Default view",
+  "refreshDataview": false
+}

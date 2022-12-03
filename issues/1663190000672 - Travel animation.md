@@ -2,7 +2,6 @@
 ## Description
 
 ## Issue 
-#progress
 - [x] Light speed travel on page change
 - [x] Seamlessly animation between pages (using *transition.js*)
 - [x] Use a smoother transition of content (better transform ease-out/ease-in curve)

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "919209afffb6e67a",
+        "id": "8328b053abc562a7",
         "type": "tabs",
         "children": [
           {
-            "id": "8a833f166abcdb4e",
+            "id": "8d0983a3abd2be70",
             "type": "leaf",
             "state": {
               "type": "kanban",
@@ -31,22 +31,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "495e74c0b3544d4b",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
             "id": "80ae6276220e2768",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#progress",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -56,18 +46,21 @@
             }
           },
           {
-            "id": "2ad3f0107936fbed",
+            "id": "204d478c2c4d2fcb",
             "type": "leaf",
             "state": {
-              "type": "starred",
-              "state": {}
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 390.5
   },
   "right": {
     "id": "89fbe107384e8f68",
@@ -143,17 +136,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8a833f166abcdb4e",
+  "active": "8d0983a3abd2be70",
   "lastOpenFiles": [
-    "issues/1668101260140 - Bugs.md",
     "issues/1668101792021 - Code cleanup.md",
     "kanban.md",
-    "issues/1664913035221 - Starfield class.md",
+    "issues/1668101260140 - Bugs.md",
+    "issues/template.md",
+    "issues/closed/1663190394832 - Travel button.md",
     "issues/1667853468740 - Routing.md",
+    "issues/1664913035221 - Starfield class.md",
     "issues/1664829072135 - Background music.md",
-    "issues/1663190758298 - About Me page.md",
-    "issues/1663190000672 - Travel animation.md",
     "issues/1664813905523 - Curriculum vitæ page.md",
-    "issues/closed/1663190394832 - Travel button.md"
+    "issues/1664813857181 - Projects page.md"
   ]
 }
