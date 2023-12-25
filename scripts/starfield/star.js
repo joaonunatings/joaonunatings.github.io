@@ -1,3 +1,5 @@
+const DEFAULT_COLOR = 255
+
 class Star {
 	constructor() {
 		let x = random(0, width)
@@ -33,7 +35,7 @@ class Star {
 	}
 
 	draw() {
-		fill(255)
+		fill(DEFAULT_COLOR)
 
 		let x = this.pos.x
 		let y = this.pos.y
@@ -45,8 +47,8 @@ class Star {
 		let shakeValue = 0.2
 		translate(random(-shakeValue * normValue , shakeValue * normValue), random(-shakeValue * normValue, shakeValue * normValue))
 
-		let colorValue = 255 - normValue * 150
-		let c = color(colorValue, colorValue, 255)
+		let colorValue = DEFAULT_COLOR - normValue * 150
+		let c = color(colorValue, colorValue, DEFAULT_COLOR)
 		stroke(c)
 		line(px, py, x, y)
 

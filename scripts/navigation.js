@@ -79,6 +79,7 @@ function changeNav(element, text, onClickFunction) {
 async function goToHome(direction) {
 	const hideNavsPromise = hideNavs([RIGHT_NAV, LEFT_NAV, BOT_NAV, TOP_NAV])
 	const travelPromise = travel(direction, 'pages/home.html')
+
 	await Promise.all([hideNavsPromise, travelPromise])
 	switch(direction) {
 		case DIRECTION_ANIMATION.LEFT:
@@ -94,33 +95,34 @@ async function goToHome(direction) {
 			changeNav(TOP_NAV, "Contact", () => console.log("not yet implemented"))
 			break
 	}
-	showNavs([RIGHT_NAV, LEFT_NAV, BOT_NAV])
+	await showNavs([RIGHT_NAV, LEFT_NAV, BOT_NAV])
 }
 
 async function goToProjects() {
 	const hideNavsPromise = hideNavs([RIGHT_NAV, BOT_NAV, LEFT_NAV, TOP_NAV])
 	const travelPromise = travel(DIRECTION_ANIMATION.RIGHT, "pages/projects.html")
+
 	await Promise.all([hideNavsPromise, travelPromise])
 	changeNav(RIGHT_NAV, "Home", () => goToHome(DIRECTION_ANIMATION.LEFT))
-	showNavs([RIGHT_NAV])
+	await showNavs([RIGHT_NAV])
 }
 
 async function goToAbout() {
 	const hideNavsPromise = hideNavs([LEFT_NAV, RIGHT_NAV, BOT_NAV, TOP_NAV])
 	const travelPromise = travel(DIRECTION_ANIMATION.LEFT, "pages/about.html")
-	await travelPromise
-	hideNavsPromise.then(() => {
-		changeNav(LEFT_NAV, "Home", () => goToHome(DIRECTION_ANIMATION.RIGHT))
-		showNavs([LEFT_NAV])
-	})
+
+	await Promise.all([hideNavsPromise, travelPromise])
+	changeNav(LEFT_NAV, "Home", () => goToHome(DIRECTION_ANIMATION.RIGHT))
 	const aboutContainer = document.getElementById('about-container')
 	transition.begin(aboutContainer, "filter blur(10px) blur(0) 0.8s ease-out")
+	await showNavs([LEFT_NAV])
 }
 
 async function goToCV() {
 	const hideNavsPromise = hideNavs([TOP_NAV, RIGHT_NAV, LEFT_NAV, BOT_NAV])
 	const travelPromise = travel(DIRECTION_ANIMATION.UP, "pages/cv.html")
+
 	await Promise.all([hideNavsPromise, travelPromise])
 	changeNav(TOP_NAV, "Home", () => goToHome(DIRECTION_ANIMATION.DOWN))
-	showNavs([TOP_NAV])
+	await showNavs([TOP_NAV])
 }
