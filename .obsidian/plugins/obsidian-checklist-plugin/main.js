@@ -455,7 +455,7 @@ var require_parse = __commonJS({
   }
 });
 
-// node_modules/mdurl/index.js
+// node_modules/mdurl/sketch.js
 var require_mdurl = __commonJS({
   "node_modules/mdurl/index.js"(exports, module2) {
     "use strict";
@@ -494,7 +494,7 @@ var require_regex5 = __commonJS({
   }
 });
 
-// node_modules/uc.micro/index.js
+// node_modules/uc.micro/sketch.js
 var require_uc = __commonJS({
   "node_modules/uc.micro/index.js"(exports) {
     "use strict";
@@ -894,7 +894,7 @@ var require_parse_link_title = __commonJS({
   }
 });
 
-// node_modules/markdown-it/lib/helpers/index.js
+// node_modules/markdown-it/lib/helpers/sketch.js
 var require_helpers = __commonJS({
   "node_modules/markdown-it/lib/helpers/index.js"(exports) {
     "use strict";
@@ -4274,7 +4274,7 @@ var require_re = __commonJS({
   }
 });
 
-// node_modules/linkify-it/index.js
+// node_modules/linkify-it/sketch.js
 var require_linkify_it = __commonJS({
   "node_modules/linkify-it/index.js"(exports, module2) {
     "use strict";
@@ -4750,7 +4750,7 @@ var require_commonmark = __commonJS({
   }
 });
 
-// node_modules/markdown-it/lib/index.js
+// node_modules/markdown-it/lib/sketch.js
 var require_lib = __commonJS({
   "node_modules/markdown-it/lib/index.js"(exports, module2) {
     "use strict";
@@ -4921,7 +4921,7 @@ var require_lib = __commonJS({
   }
 });
 
-// node_modules/markdown-it/index.js
+// node_modules/markdown-it/sketch.js
 var require_markdown_it = __commonJS({
   "node_modules/markdown-it/index.js"(exports, module2) {
     "use strict";
@@ -4937,7 +4937,7 @@ var require_path = __commonJS({
   }
 });
 
-// node_modules/balanced-match/index.js
+// node_modules/balanced-match/sketch.js
 var require_balanced_match = __commonJS({
   "node_modules/balanced-match/index.js"(exports, module2) {
     "use strict";
@@ -4997,7 +4997,7 @@ var require_balanced_match = __commonJS({
   }
 });
 
-// node_modules/brace-expansion/index.js
+// node_modules/brace-expansion/sketch.js
 var require_brace_expansion = __commonJS({
   "node_modules/brace-expansion/index.js"(exports, module2) {
     var balanced = require_balanced_match();

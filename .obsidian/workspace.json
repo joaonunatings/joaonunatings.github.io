@@ -36,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#progress",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -60,7 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 297.5
   },
   "right": {
     "id": "89fbe107384e8f68",
@@ -136,17 +136,29 @@
     "width": 300,
     "collapsed": true
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "zk-prefixer:Create new unique note": false,
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-statusbar-pomo:Start pomodoro": false,
+      "homepage:Open homepage": false
+    }
+  },
   "active": "8d0983a3abd2be70",
   "lastOpenFiles": [
-    "issues/1668101792021 - Code cleanup.md",
-    "kanban.md",
     "issues/1668101260140 - Bugs.md",
-    "issues/template.md",
-    "issues/closed/1663190394832 - Travel button.md",
-    "issues/1667853468740 - Routing.md",
+    "kanban.md",
+    "issues/1663700293196 - Website layout.md",
     "issues/1664913035221 - Starfield class.md",
+    "issues/1667853468740 - Routing.md",
     "issues/1664829072135 - Background music.md",
     "issues/1664813905523 - Curriculum vitæ page.md",
-    "issues/1664813857181 - Projects page.md"
+    "issues/1668101792021 - Code cleanup.md",
+    "issues/template.md",
+    "issues/closed/1663190394832 - Travel button.md"
   ]
 }

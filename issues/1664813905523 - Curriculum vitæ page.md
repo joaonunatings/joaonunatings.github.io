@@ -22,4 +22,4 @@ Add download link to more formal CV (i.e.: one created using *Europass* or *Canv
 - [ ] Add bar representing level for each language
 - [ ] Add links to CV's pdf download
 - [ ] Accordian style like bootstrap ([here](https://getbootstrap.com/docs/5.0/components/accordion/))
-- [ ] Upload CV to a cloud host so it is updated automatically in the website instead of update the docs in 
+- [x] Upload CV to a cloud host so it is updated automatically in the website instead of update the docs in 

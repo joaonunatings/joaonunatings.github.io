@@ -1834,7 +1834,7 @@ module.exports = function (that, pos, CONVERT_TO_STRING) {
 
 /***/ "./node_modules/core-js/internals/to-absolute-index.js":
 /*!*************************************************************!*\
-  !*** ./node_modules/core-js/internals/to-absolute-index.js ***!
+  !*** ./node_modules/core-js/internals/to-absolute-sketch.js ***!
   \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2249,7 +2249,7 @@ exports.default = Object.keys(_icons2.default).map(function (key) {
 
 /***/ "./src/index.js":
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./src/sketch.js ***!
   \**********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -2411,13 +2411,13 @@ exports.default = toSvg;
 
 /***/ 0:
 /*!**************************************************!*\
-  !*** multi core-js/es/array/from ./src/index.js ***!
+  !*** multi core-js/es/array/from ./src/sketch.js ***!
   \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! core-js/es/array/from */"./node_modules/core-js/es/array/from.js");
-module.exports = __webpack_require__(/*! /home/travis/build/feathericons/feather/src/index.js */"./src/index.js");
+module.exports = __webpack_require__(/*! /home/travis/build/feathericons/feather/src/sketch.js */"./src/index.js");
 
 
 /***/ })

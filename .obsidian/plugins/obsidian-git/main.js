@@ -33,7 +33,7 @@ var __toModule = (module2) => {
   return __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", module2 && module2.__esModule && "default" in module2 ? { get: () => module2.default, enumerable: true } : { value: module2, enumerable: true })), module2);
 };
 
-// node_modules/base64-js/index.js
+// node_modules/base64-js/sketch.js
 var require_base64_js = __commonJS({
   "node_modules/base64-js/index.js"(exports) {
     init_polyfill_buffer();
@@ -132,7 +132,7 @@ var require_base64_js = __commonJS({
   }
 });
 
-// node_modules/ieee754/index.js
+// node_modules/ieee754/sketch.js
 var require_ieee754 = __commonJS({
   "node_modules/ieee754/index.js"(exports) {
     init_polyfill_buffer();
@@ -216,7 +216,7 @@ var require_ieee754 = __commonJS({
   }
 });
 
-// node_modules/buffer/index.js
+// node_modules/buffer/sketch.js
 var require_buffer = __commonJS({
   "node_modules/buffer/index.js"(exports) {
     init_polyfill_buffer();
@@ -1868,7 +1868,7 @@ var init_polyfill_buffer = __esm({
   }
 });
 
-// node_modules/async-lock/lib/index.js
+// node_modules/async-lock/lib/sketch.js
 var require_lib = __commonJS({
   "node_modules/async-lock/lib/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -2076,7 +2076,7 @@ var require_lib = __commonJS({
   }
 });
 
-// node_modules/async-lock/index.js
+// node_modules/async-lock/sketch.js
 var require_async_lock = __commonJS({
   "node_modules/async-lock/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -2118,7 +2118,7 @@ var require_inherits_browser = __commonJS({
   }
 });
 
-// node_modules/safe-buffer/index.js
+// node_modules/safe-buffer/sketch.js
 var require_safe_buffer = __commonJS({
   "node_modules/safe-buffer/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -6527,7 +6527,7 @@ var require_inflate2 = __commonJS({
   }
 });
 
-// node_modules/pako/index.js
+// node_modules/pako/sketch.js
 var require_pako = __commonJS({
   "node_modules/pako/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -6542,7 +6542,7 @@ var require_pako = __commonJS({
   }
 });
 
-// node_modules/ignore/index.js
+// node_modules/ignore/sketch.js
 var require_ignore = __commonJS({
   "node_modules/ignore/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -6788,7 +6788,7 @@ var require_ignore = __commonJS({
   }
 });
 
-// node_modules/pify/index.js
+// node_modules/pify/sketch.js
 var require_pify = __commonJS({
   "node_modules/pify/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -6854,7 +6854,7 @@ var require_pify = __commonJS({
   }
 });
 
-// node_modules/clean-git-ref/lib/index.js
+// node_modules/clean-git-ref/lib/sketch.js
 var require_lib2 = __commonJS({
   "node_modules/clean-git-ref/lib/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -7224,7 +7224,7 @@ var require_diff3 = __commonJS({
   }
 });
 
-// node_modules/ms/index.js
+// node_modules/ms/sketch.js
 var require_ms = __commonJS({
   "node_modules/ms/index.js"(exports, module2) {
     init_polyfill_buffer();
@@ -7667,7 +7667,7 @@ var require_browser = __commonJS({
   }
 });
 
-// node_modules/@kwsites/file-exists/dist/src/index.js
+// node_modules/@kwsites/file-exists/dist/src/sketch.js
 var require_src = __commonJS({
   "node_modules/@kwsites/file-exists/dist/src/index.js"(exports) {
     init_polyfill_buffer();
@@ -7712,7 +7712,7 @@ var require_src = __commonJS({
   }
 });
 
-// node_modules/@kwsites/file-exists/dist/index.js
+// node_modules/@kwsites/file-exists/dist/sketch.js
 var require_dist = __commonJS({
   "node_modules/@kwsites/file-exists/dist/index.js"(exports) {
     init_polyfill_buffer();
@@ -7727,7 +7727,7 @@ var require_dist = __commonJS({
   }
 });
 
-// node_modules/@kwsites/promise-deferred/dist/index.js
+// node_modules/@kwsites/promise-deferred/dist/sketch.js
 var require_dist2 = __commonJS({
   "node_modules/@kwsites/promise-deferred/dist/index.js"(exports) {
     init_polyfill_buffer();
@@ -9780,7 +9780,7 @@ __export(exports, {
 });
 init_polyfill_buffer();
 
-// node_modules/isomorphic-git/index.js
+// node_modules/isomorphic-git/sketch.js
 init_polyfill_buffer();
 var import_async_lock = __toModule(require_async_lock());
 var import_sha1 = __toModule(require_sha1());
@@ -20253,7 +20253,7 @@ var import_obsidian6 = __toModule(require("obsidian"));
 var path = __toModule(require("path"));
 var import_path = __toModule(require("path"));
 
-// node_modules/simple-git/dist/esm/index.js
+// node_modules/simple-git/dist/esm/sketch.js
 init_polyfill_buffer();
 var import_file_exists = __toModule(require_dist());
 var import_debug = __toModule(require_browser());
@@ -27295,7 +27295,7 @@ function slide(node, { delay: delay2 = 0, duration = 400, easing = cubicOut } = 
 init_polyfill_buffer();
 var import_obsidian18 = __toModule(require("obsidian"));
 
-// node_modules/obsidian-community-lib/dist/index.js
+// node_modules/obsidian-community-lib/dist/sketch.js
 init_polyfill_buffer();
 
 // node_modules/obsidian-community-lib/dist/utils.js

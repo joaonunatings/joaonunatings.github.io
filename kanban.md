@@ -20,11 +20,12 @@ kanban-plugin: basic
 - [ ] Adicionar based (Lisbon, Portugal) location and remote location
 - [ ] Add legacy browser support
 - [ ] Use -moz, -webkit, etc? ([[1668101792021 - Code cleanup|issue]])
+- [ ] Add music: Mac Demarco - 20191229
+- [ ] Download CV language based on system locale
 
 
 ## Todo
 
-- [ ] Starfield class ([[1664913035221 - Starfield class|issue]])
 - [ ] Stars fix on window resize ([[1664913035221 - Starfield class|issue]])
 - [ ] Add a 404 error page when trying to access other pages ([[1667853468740 - Routing|issue]])
 - [ ] Cycle through my quotes or quotes I like in the start screen
@@ -35,11 +36,12 @@ kanban-plugin: basic
 
 ## In progress
 
-- [ ] Upload CV to cloud ([[1664813905523 - Curriculum vitæ page|issue]])
+- [ ] Starfield class ([[1664913035221 - Starfield class|issue]])
 
 
 ## Done
 
+- [ ] Upload CV to cloud ([[1664813905523 - Curriculum vitæ page|issue]])
 - [ ] Change nav class to ids ([[1668101792021 - Code cleanup|issue]])
 - [ ] Solve hidden not working in nav's ([[1668101260140 - Bugs|issue]])
 - [ ] Use css vars ([[1668101792021 - Code cleanup|issue]])
